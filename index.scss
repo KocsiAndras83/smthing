@@ -1,0 +1,152 @@
+
+
+$background-color: #22b573ff;
+$science-bgc: #1c1717ff;
+$nature-bgc: #f2f2f2ff;
+$yellowText: #e6a947ff;
+$whiteText: #a3a09dff;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: $nature-bgc;
+  letter-spacing: 0.3rem;
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-top: 1rem;
+
+}
+
+
+.cards {
+  margin: 3rem 5rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards div {
+  height: 450px;
+  
+}
+
+.science {
+  background-color: $science-bgc;
+  color: $whiteText;
+  margin: 2rem;
+  width: 25%;
+  
+}
+
+.nature {
+  background-color: $nature-bgc;
+  margin: 2rem;
+  width: 25%;
+  
+}
+
+.video {
+  background-color: $science-bgc;
+  color: $whiteText;
+  margin: 2rem;
+  width: 25%;
+  
+}
+
+.text-box {
+  margin: 1rem 1rem 0rem;
+  overflow-y: auto;
+}
+
+h5, h6 {
+  color: $yellowText;
+}
+
+#nature-p {
+  text-indent: 10px;
+}
+
+.play {
+  height: 100px;
+  width: 100px
+}
+
+.hamburger {
+  background: #242d38;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .cards {
+    margin: 3rem 2.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .video, .nature, .science {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 1rem 1rem 0rem;
+  }
+
+  h6 {
+    margin-top: -10px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+
+  h5, h4, p {
+    font-size: 0.8rem;
+  }
+  
+  .hamburger {
+    width: 45px;
+    height: 45px;
+    gap: 3px;
+  }
+
+  .hamburger div {
+      width: 20px;
+      height: 4px;
+  }
+
+  .cards div {
+    height: 350px;
+  }
+  
+}

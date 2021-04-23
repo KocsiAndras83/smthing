@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #22b573ff;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2f2f2ff;
+  letter-spacing: 0.3rem;
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.cards {
+  margin: 3rem 5rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cards div {
+  height: 450px;
+}
+
+.science {
+  background-color: #1c1717ff;
+  color: #a3a09dff;
+  margin: 2rem;
+  width: 25%;
+}
+
+.nature {
+  background-color: #f2f2f2ff;
+  margin: 2rem;
+  width: 25%;
+}
+
+.video {
+  background-color: #1c1717ff;
+  color: #a3a09dff;
+  margin: 2rem;
+  width: 25%;
+}
+
+.text-box {
+  margin: 1rem 1rem 0rem;
+  overflow-y: auto;
+}
+
+h5, h6 {
+  color: #e6a947ff;
+}
+
+#nature-p {
+  text-indent: 10px;
+}
+
+.play {
+  height: 100px;
+  width: 100px;
+}
+
+.hamburger {
+  background: #242d38;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .cards {
+    margin: 3rem 2.5rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .video, .nature, .science {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+  .text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 1rem 1rem 0rem;
+  }
+  h6 {
+    margin-top: -10px;
+  }
+  h1 {
+    font-size: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 1rem;
+  }
+  h5, h4, p {
+    font-size: 0.8rem;
+  }
+  .hamburger {
+    width: 45px;
+    height: 45px;
+    gap: 3px;
+  }
+  .hamburger div {
+    width: 20px;
+    height: 4px;
+  }
+  .cards div {
+    height: 350px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
